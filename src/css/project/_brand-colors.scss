@@ -1,0 +1,85 @@
+.navigation__link--next,
+.progress,
+.reject__button--no,
+.par.is-active,
+.radio-button.is-active,
+.calendar__switch.is-active {
+  background-color: $primary;
+}
+
+.navigation__link--next:hover,
+.reject__button--no:hover {
+  background-color: lighten($primary, 5%);
+}
+
+.calendar__switch {
+  background-color: darken($primary, 5%);
+}
+
+.add-button,
+.user-par,
+.choosen-option,
+.calendar__day:hover,
+.calendar__day.current,
+.calendar__day.is-active,
+.calendar__time:hover,
+.calendar__time.is-active {
+  @include background-opacity($primary, 0.16);
+  color: $secondary;
+}
+
+.add-button,
+.user-par {
+  &:hover {
+    @include background-opacity($primary, 0.26);
+  }
+
+  &__icon {
+    fill: $secondary;
+  }
+}
+
+.user-par__input {
+  &::-webkit-input-placeholder {
+    color: $secondary;
+  }
+
+  &::-moz-placeholder {
+    color: $secondary;
+  }
+
+  &:-ms-input-placeholder {
+    color: $secondary;
+  }
+}
+
+a,
+.header__link:hover,
+.footer__link:hover,
+.footer__phone:hover {
+  color: $primary;
+}
+
+.input,
+.user-par__input,
+.grats__textarea,
+.input-block.eidted .input {
+  caret-color: $primary;
+}
+
+.input,
+.grats__textarea,
+.input-block.eidted .input {
+  &:focus,
+  &.focus {
+    @include border-bottom-color($primary, 1);
+  }
+}
+
+.input,
+.input-block.eidted .input {
+  &:focus,
+  &.focus {
+    @include box-shadow-bottom($primary);
+  }
+}

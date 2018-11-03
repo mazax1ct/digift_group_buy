@@ -1,0 +1,15 @@
+@mixin background-opacity($color, $opacity: 0.16) {
+    background-color: rgba($color, $opacity);
+}
+
+@mixin border-bottom-color($color, $opacity: 0.16) {
+    border-bottom-color: rgba($color, $opacity);
+}
+
+@mixin box-shadow-bottom($color) {
+    box-shadow: 0px -1px 0px 0px $color inset;
+}
+
+@mixin text-color($color, $opacity: 0.16) {
+    color: rgba($color, $opacity);
+}

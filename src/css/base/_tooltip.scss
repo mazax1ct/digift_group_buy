@@ -1,0 +1,53 @@
+@mixin border-color($color, $opacity: 0.16) {
+    border-top-color: rgba($color, $opacity);
+}
+
+.tooltip {
+  @include background-opacity(#595959, 0.9);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  left: 50%;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  opacity: 0;
+  padding: 14px 18px 16px;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  transform: translate(-50%, -100%);
+  transition: all 0.4s;
+  text-align: center;
+  text-transform: none;
+  visibility: hidden;
+  width: 252px;
+  z-index: 1;
+
+  &::after {
+    top: 100%;
+    left: 50%;
+    margin-top: -2px;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    @include border-color(#595959, 0.9);
+    border-width: 4px;
+    margin-left: -4px;
+  }
+}
+
+.tooltip-holder {
+  position: relative;
+
+  &:hover {
+    & .tooltip {
+      opacity: 1;
+      transform: translate(-50%, calc(-100% - 20px));
+      visibility: visible;
+    }
+  }
+}

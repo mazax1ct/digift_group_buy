@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Ввод email участников</title>
+
+    <meta name="description" content="">
+
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/style.html
+  </head>
+  <body>
+    //= template/sprite.html
+    <div class="iframe-wrapper">
+      <div class="iframe-container">
+        <button class="js-iframe-close iframe-close"><svg class="iframe-close__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+        <div class="wrapper">
+          //= template/header.html
+          <div class="container">
+            <div class="background">
+              <div class="emails-list">
+                <div class="emails-list__inner scrollbox">
+                  <div class="choosen-options">
+                    <span class="choosen-option">По email</span>
+                  </div>
+                  <div class="email-block">
+                    <p class="title">Введите email участников</p>
+                    <div class="email-row centered-block">
+                      <label class="input-block" for="name_1">
+                        <input class="input" id="name_1" name="name_1" type="text" value="">
+                        <span class="input-block__label">Имя</span>
+                      </label>
+                      <label class="input-block edited" for="email_1">
+                        <input class="input" id="email_1" name="email_1" type="text" value="hello@sorokin.me">
+                        <span class="input-block__label">Email</span>
+                      </label>
+                      <button class="delete-button delete-button--small" type="button">Удалить <svg class="delete-button__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+                    </div>
+                    <div class="email-row centered-block">
+                      <label class="input-block" for="name_2">
+                        <input class="input" id="name_2" name="name_2" type="text" value="">
+                        <span class="input-block__label">Имя</span>
+                      </label>
+                      <label class="input-block edited" for="email_2">
+                        <input class="input" id="email_2" name="email_2" type="text" value="hello@sorokin.me">
+                        <span class="input-block__label">Email</span>
+                      </label>
+                      <button class="delete-button delete-button--small" type="button">Удалить <svg class="delete-button__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+                    </div>
+                    <div class="email-row centered-block">
+                      <label class="input-block" for="name_3">
+                        <input class="input" id="name_3" name="name_3" type="text" value="">
+                        <span class="input-block__label">Имя</span>
+                      </label>
+                      <label class="input-block edited" for="email_3">
+                        <input class="input" id="email_3" name="email_3" type="text" value="hello@sorokin.me">
+                        <span class="input-block__label">Email</span>
+                      </label>
+                      <button class="delete-button delete-button--small" type="button">Удалить <svg class="delete-button__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+                    </div>
+                    <div class="email-row centered-block">
+                      <label class="input-block" for="name_4">
+                        <input class="input" id="name_4" name="name_4" type="text" value="">
+                        <span class="input-block__label">Имя</span>
+                      </label>
+                      <label class="input-block edited" for="email_4">
+                        <input class="input" id="email_4" name="email_4" type="text" value="hello@sorokin.me">
+                        <span class="input-block__label">Email</span>
+                      </label>
+                      <button class="add-button add-button--small" type="button">Добавить еще <svg class="add-button__icon" aria-hidden="true"><use xlink:href="#plus"/></svg></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="navigation">
+                <a class="navigation__link navigation__link--prev" href="step_6.html"><svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-left"/></svg>Назад</a>
+                <div class="progress-block">
+                  <div class="progress-bar"><div class="progress" style="width: 100%"></div></div>
+                  <div class="steps"><span class="step">7</span> / 7</div>
+                </div>
+                <a class="navigation__link navigation__link--next disabled" href="javascript:void(0)">Далее<svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-right"/></svg></a>
+              </div>
+            </div>
+          </div>
+          //= template/footer.html
+        </div>
+        //= template/reject.html
+      </div>
+    </div>
+
+    //= template/scripts.html
+  </body>
+</html>

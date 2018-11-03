@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Количество участников</title>
+
+    <meta name="description" content="">
+
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/style.html
+  </head>
+  <body>
+    //= template/sprite.html
+    <div class="iframe-wrapper">
+      <div class="iframe-container">
+        <button class="js-iframe-close iframe-close"><svg class="iframe-close__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+        <div class="wrapper">
+          //= template/header.html
+          <div class="container">
+            <div class="with-preview background">
+              //= template/card-preview.html
+              <div class="choosen-options">
+                <span class="choosen-option">Поровну</span>
+              </div>
+              <div class="from-block">
+                <p class="title">По сколько скидываетесь?</p>
+                <div class="centered-block">
+                  <label class="input-block" for="quantity">
+                    <input class="input" id="quantity" name="quantity" type="text" value="">
+                    <span class="input-block__label">Кол-во участников</span>
+                  </label>
+                  <p class="share-block">
+                    <span class="share-block__title">Взнос участников</span>
+                    <span class="share-block__ammount">0 <span class="share-block__currency">Р</span></span>
+                  </p>
+                  <p class="share-block">
+                    <span class="share-block__title">Ваш взнос</span>
+                    <span class="share-block__ammount">0 <span class="share-block__currency">Р</span></span>
+                  </p>
+                </div>
+              </div>
+              <div class="navigation">
+                <a class="navigation__link navigation__link--prev" href="step_6.html"><svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-left"/></svg>Назад</a>
+                <div class="progress-block">
+                  <div class="progress-bar"><div class="progress" style="width: 85.7082%"></div></div>
+                  <div class="steps"><span class="step">6</span> / 7</div>
+                </div>
+                <a class="navigation__link navigation__link--next disabled" href="javascript:void(0)">Далее<svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-right"/></svg></a>
+              </div>
+            </div>
+          </div>
+          //= template/footer.html
+        </div>
+        //= template/reject.html
+      </div>
+    </div>
+
+    //= template/scripts.html
+  </body>
+</html>

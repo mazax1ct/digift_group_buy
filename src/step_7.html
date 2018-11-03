@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Отправить друзьям</title>
+
+    <meta name="description" content="">
+
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/style.html
+  </head>
+  <body>
+    //= template/sprite.html
+    <div class="iframe-wrapper">
+      <div class="iframe-container">
+        <button class="js-iframe-close iframe-close"><svg class="iframe-close__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+        <div class="wrapper">
+          //= template/header.html
+          <div class="container">
+            <div class="with-preview background">
+              //= template/card-preview.html
+              <div class="send-block">
+                <p class="title">Отправить друзьям</p>
+                <div class="centered-block">
+                  <div class="ltc">
+                    <label class="ltc__label" for="ltc">
+                      <input class="ltc__input" id="ltc" name="ltc" type="text" value="https://www.digift.ru/blog/kompaniya-digift-ocenila-servisy-elektronnyh-podarochnyh-kart-onlayn-riteylerov">
+                    </label>
+                    <button class="js-ltc-button ltc__button" type="button">Скопировать</button>
+                  </div>
+                  <label class="radio-button radio-button--small" for="email" data-name="send_type">
+                    <input class="radio-button__radio" id="email" name="send_type" type="radio" value="1">
+                    По email
+                  </label>
+                  <label class="radio-button radio-button--small" for="sms" data-name="send_type">
+                    <input class="radio-button__radio" id="sms" name="send_type" type="radio" value="2">
+                    В SMS
+                  </label>
+                </div>
+              </div>
+              <div class="navigation">
+                <a class="navigation__link navigation__link--prev" href="step_6.html"><svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-left"/></svg>Назад</a>
+                <div class="progress-block">
+                  <div class="progress-bar"><div class="progress" style="width: 100%"></div></div>
+                  <div class="steps"><span class="step">7</span> / 7</div>
+                </div>
+                <a class="navigation__link navigation__link--next disabled" href="javascript:void(0)">Далее<svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-right"/></svg></a>
+              </div>
+            </div>
+          </div>
+          //= template/footer.html
+        </div>
+        //= template/reject.html
+      </div>
+    </div>
+
+    //= template/scripts.html
+  </body>
+</html>

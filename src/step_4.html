@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Выбор получателя</title>
+
+    <meta name="description" content="">
+
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/style.html
+  </head>
+  <body>
+    //= template/sprite.html
+    <div class="iframe-wrapper">
+      <div class="iframe-container">
+        <button class="js-iframe-close iframe-close"><svg class="iframe-close__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+        <div class="wrapper">
+          //= template/header.html
+          <div class="container">
+            <div class="with-preview background">
+              //= template/card-preview.html
+              <div class="gift-receiver">
+                <p class="title">Кому отправить подарок?</p>
+                <div class="centered-block">
+                  <label class="radio-button" for="receiver_1" data-name="receiver">
+                    <input class="radio-button__radio" id="receiver_1" name="receiver" type="radio" value="1">
+                    Себе
+                  </label>
+                  <label class="radio-button" for="receiver_2" data-name="receiver">
+                    <input class="radio-button__radio" id="receiver_2" name="receiver" type="radio" value="2">
+                    Другу
+                  </label>
+                </div>
+              </div>
+              <div class="navigation">
+                <a class="navigation__link navigation__link--prev" href="step_3.html"><svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-left"/></svg>Назад</a>
+                <div class="progress-block">
+                  <div class="progress-bar"><div class="progress" style="width: 57.1388%"></div></div>
+                  <div class="steps"><span class="step">4</span> / 7</div>
+                </div>
+                <a class="navigation__link navigation__link--next disabled" href="javascript:void(0)">Далее<svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-right"/></svg></a>
+              </div>
+            </div>
+          </div>
+          //= template/footer.html
+        </div>
+        //= template/reject.html
+      </div>
+    </div>
+
+    //= template/scripts.html
+  </body>
+</html>

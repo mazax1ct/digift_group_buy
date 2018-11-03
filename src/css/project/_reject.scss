@@ -1,0 +1,65 @@
+.reject {
+  @include background-opacity(#fff, 0.92);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+
+  &.is-open {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.6px;
+    margin-bottom: 24px;
+    opacity: 0.8;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    background-color: #eee;
+    color: #1e1e1e;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: space-between;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    margin-left: 12px;
+    margin-right: 12px;
+    min-width: 182px;
+    padding: 10px 16px;
+    transition: all 0.4s;
+    text-align: center;
+    text-decoration: none;
+
+    &--no {
+      color: #fff;
+    }
+
+    &--yes {
+      background-color: #eee;
+
+      &:hover {
+        background-color: darken(#eee, 5%);
+      }
+    }
+  }
+}

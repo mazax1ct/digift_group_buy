@@ -1,0 +1,23 @@
+.pars-block {
+  margin-top: 64px;
+}
+
+.gift-receiver,
+.shares-block,
+.send-block {
+  margin-top: 100px;
+}
+
+.pay-type,
+.from-block,
+.email-block {
+  margin-top: 40px;
+}
+
+.email-row {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

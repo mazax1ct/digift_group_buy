@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Ввод текста поздравления</title>
+
+    <meta name="description" content="">
+
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/style.html
+  </head>
+  <body>
+    //= template/sprite.html
+    <div class="iframe-wrapper">
+      <div class="iframe-container">
+        <button class="js-iframe-close iframe-close"><svg class="iframe-close__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+        <div class="wrapper">
+          //= template/header.html
+          <div class="container">
+            <div class="with-preview background">
+              //= template/card-preview.html
+              <div class="grats">
+                <label class="grats__textarea-block" for="grats">
+                  <textarea class="grats__textarea edited" id="grats">Поздравляю с днем рождения и желаю видеть только прекрасное, слышать только приятное, ощущать счастье и любовь.</textarea>
+                  <div class="grats__fake-textarea">Поздравляю с днем рождения и желаю видеть только прекрасное, слышать только приятное, ощущать счастье и любовь.</div>
+                  <span class="grats__textarea-placeholder">Текст поздравления</span>
+                </label>
+                <div class="grats__bottom">
+                  <span class="grats__note">Необязательно</span>
+                  <div class="grats__count"><span class="grats__count-limit">360</span> / 360</div>
+                </div>
+              </div>
+              <div class="navigation">
+                <a class="navigation__link navigation__link--prev" href="step_2.html"><svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-left"/></svg>Назад</a>
+                <div class="progress-block">
+                  <div class="progress-bar"><div class="progress" style="width: 42.8571%"></div></div>
+                  <div class="steps"><span class="step">3</span> / 7</div>
+                </div>
+                <a class="navigation__link navigation__link--next" href="step_4.html">Далее<svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-right"/></svg></a>
+              </div>
+            </div>
+          </div>
+          //= template/footer.html
+        </div>
+        //= template/reject.html
+      </div>
+    </div>
+
+    //= template/scripts.html
+  </body>
+</html>

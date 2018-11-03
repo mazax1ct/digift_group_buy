@@ -1,0 +1,37 @@
+.checkbox-label,
+.radio-label {
+  display: flex;
+  line-height: 20px;
+}
+
+.checkbox,
+.radio {
+  display: none;
+}
+
+.checkbox-icon,
+.radio-icon {
+  background-color: #e6e6e6;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  height: 23px;
+  margin-right: 12px;
+  width: 23px;
+  min-width: 23px;
+}
+
+.checkbox:disabled + .checkbox-icon,
+.checkbox.disabled + .checkbox-icon,
+.radio:disabled + .radio-icon,
+.radio.disabled + .radio-icon {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.checkbox:checked + .checkbox-icon,
+.radio:checked + .radio-icon {
+  background-image: url("../images/icons/check.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

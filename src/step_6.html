@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Выбор доли участия</title>
+
+    <meta name="description" content="">
+
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/style.html
+  </head>
+  <body>
+    //= template/sprite.html
+    <div class="iframe-wrapper">
+      <div class="iframe-container">
+        <button class="js-iframe-close iframe-close"><svg class="iframe-close__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+        <div class="wrapper">
+          //= template/header.html
+          <div class="container">
+            <div class="with-preview background">
+              //= template/card-preview.html
+              <div class="shares-block">
+                <p class="title">Как будете скидываться на подарок?</p>
+                <div class="centered-block">
+                  <label class="radio-button tooltip-holder" for="share_type_1" data-name="share_type">
+                    <span class="tooltip">Все участники скидываются по одной сумме, это общая сумма поделенная на количество участников. При неровном делении, большую часть оплачивает инициатор</span>
+                    <input class="radio-button__radio" id="share_type_1" name="share_type" type="radio" value="1">
+                    Поровну
+                  </label>
+                  <label class="radio-button" for="share_type_2" data-name="share_type">
+                    <input class="radio-button__radio" id="share_type_2" name="share_type" type="radio" value="2">
+                    По желанию
+                  </label>
+                </div>
+              </div>
+              <div class="navigation">
+                <a class="navigation__link navigation__link--prev" href="step_5.html"><svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-left"/></svg>Назад</a>
+                <div class="progress-block">
+                  <div class="progress-bar"><div class="progress" style="width: 85.7082%"></div></div>
+                  <div class="steps"><span class="step">6</span> / 7</div>
+                </div>
+                <a class="navigation__link navigation__link--next disabled" href="javascript:void(0)">Далее<svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-right"/></svg></a>
+              </div>
+            </div>
+          </div>
+          //= template/footer.html
+        </div>
+        //= template/reject.html
+      </div>
+    </div>
+
+    //= template/scripts.html
+  </body>
+</html>

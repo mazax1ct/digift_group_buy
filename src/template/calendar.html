@@ -1,0 +1,129 @@
+<div class="calendar-overlay"></div>
+<div class="calendar">
+  <div class="calendar__top">
+    <button class="calendar__switch is-active" type="button" data-href="date_picker">
+      <span class="calendar__switch-title">Дата</span>
+      <span class="calendar__switch-value">24 окт</span>
+    </button>
+    <button class="calendar__switch" type="button" data-href="time_picker">
+      <span class="calendar__switch-title">Время</span>
+      <span class="calendar__switch-value">18:00</span>
+    </button>
+  </div>
+  <div class="calendar__date-picker calendar__block is-active" data-target="date_picker">
+    <div class="calendar__month">
+      <button class="calendar__month-button" type="button" title="Апрель 2017"><svg class="calendar__month-arrow" aria-hidden="true"><use xlink:href="#arrow-left"/></svg></button>
+      <div class="calendar__month-title">Март 2017</div>
+      <button class="calendar__month-button" type="button" title="Май 2017"><svg class="calendar__month-arrow" aria-hidden="true"><use xlink:href="#arrow-right"/></svg></button>
+    </div>
+    <table class="calendar__month-table">
+      <tr>
+        <td class="calendar__day-title">Пн</td>
+        <td class="calendar__day-title">Вт</td>
+        <td class="calendar__day-title">Ср</td>
+        <td class="calendar__day-title">Чт</td>
+        <td class="calendar__day-title">Пт</td>
+        <td class="calendar__day-title">Сб</td>
+        <td class="calendar__day-title">Вс</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><button class="calendar__day disabled" type="button">1</button></td>
+      </tr>
+      <tr>
+        <td><button class="calendar__day disabled" type="button">2</button></td>
+        <td><button class="calendar__day disabled" type="button">3</button></td>
+        <td><button class="calendar__day disabled" type="button">4</button></td>
+        <td><button class="calendar__day disabled" type="button">5</button></td>
+        <td><button class="calendar__day disabled" type="button">6</button></td>
+        <td><button class="calendar__day disabled" type="button">7</button></td>
+        <td><button class="calendar__day disabled" type="button">8</button></td>
+      </tr>
+      <tr>
+        <td><button class="calendar__day disabled" type="button">9</button></td>
+        <td><button class="calendar__day disabled" type="button">10</button></td>
+        <td><button class="calendar__day disabled" type="button">11</button></td>
+        <td><button class="calendar__day current" type="button">12</button></td>
+        <td><button class="calendar__day" type="button">13</button></td>
+        <td><button class="calendar__day" type="button">14</button></td>
+        <td><button class="calendar__day" type="button">15</button></td>
+      </tr>
+      <tr>
+        <td><button class="calendar__day" type="button">16</button></td>
+        <td><button class="calendar__day" type="button">17</button></td>
+        <td><button class="calendar__day" type="button">18</button></td>
+        <td><button class="calendar__day" type="button">19</button></td>
+        <td><button class="calendar__day" type="button">20</button></td>
+        <td><button class="calendar__day" type="button">21</button></td>
+        <td><button class="calendar__day" type="button">22</button></td>
+      </tr>
+      <tr>
+        <td><button class="calendar__day" type="button">23</button></td>
+        <td><button class="calendar__day" type="button">24</button></td>
+        <td><button class="calendar__day" type="button">25</button></td>
+        <td><button class="calendar__day" type="button">26</button></td>
+        <td><button class="calendar__day" type="button">27</button></td>
+        <td><button class="calendar__day" type="button">28</button></td>
+        <td><button class="calendar__day" type="button">29</button></td>
+      </tr>
+      <tr>
+        <td><button class="calendar__day" type="button">30</button></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div class="calendar__time-picker calendar__block" data-target="time_picker">
+    <table class="calendar__time-table">
+      <tr>
+        <td class="calendar__time-block"><button class="calendar__time disabled" type="button">00:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time disabled" type="button">01:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time disabled" type="button">02:00</button></td>
+      </tr>
+      <tr>
+        <td class="calendar__time-block"><button class="calendar__time disabled" type="button">03:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time disabled" type="button">04:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time disabled" type="button">05:00</button></td>
+      </tr>
+      <tr>
+        <td class="calendar__time-block"><button class="calendar__time disabled" type="button">06:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time disabled" type="button">07:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time disabled" type="button">08:00</button></td>
+      </tr>
+      <tr>
+        <td class="calendar__time-block"><button class="calendar__time disabled" type="button">09:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time disabled" type="button">10:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time disabled" type="button">11:00</button></td>
+      </tr>
+      <tr>
+        <td class="calendar__time-block"><button class="calendar__time disabled" type="button">12:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time is-active" type="button">13:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time" type="button">14:00</button></td>
+      </tr>
+      <tr>
+        <td class="calendar__time-block"><button class="calendar__time" type="button">15:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time" type="button">16:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time" type="button">17:00</button></td>
+      </tr>
+      <tr>
+        <td class="calendar__time-block"><button class="calendar__time" type="button">18:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time" type="button">19:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time" type="button">20:00</button></td>
+      </tr>
+      <tr>
+        <td class="calendar__time-block"><button class="calendar__time" type="button">21:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time" type="button">22:00</button></td>
+        <td class="calendar__time-block"><button class="calendar__time" type="button">23:00</button></td>
+      </tr>
+    </table>
+  </div>
+</div>

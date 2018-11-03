@@ -1,0 +1,35 @@
+.error-block {
+  align-items: center;
+  background-color: #c5071e;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 66px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+
+  &__close {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 66px;
+    left: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 66px;
+  }
+
+  &__icon {
+    fill: #fff;
+    height: 14px;
+    width: 14px;
+  }
+}

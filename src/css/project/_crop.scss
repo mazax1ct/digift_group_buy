@@ -1,0 +1,100 @@
+.dropzone-overlay {
+  @include background-opacity(#fff, 0.5);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.crop-block {
+  height: 100% !important;
+}
+
+.crop-popup {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  &__buttons {
+    align-items: center;
+    bottom: 12px;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__buttons-block {
+    display: flex;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  &__button {
+    @include background-opacity(#5f5f5f, 0.75);
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    height: 48px;
+    letter-spacing: 0.5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0;
+    text-align: center;
+    transition: background-color 0.4s;
+    vertical-align: middle;
+    min-width: 48px;
+
+    &:hover {
+      @include background-opacity(#5f5f5f, 1);
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--close {
+      left: auto;
+      margin: 0;
+      position: absolute;
+      right: 6px;
+      padding: 0;
+      top: 6px;
+      z-index: 1;
+    }
+
+    &--accept {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
+  &__button-icon {
+    fill: #fff;
+    height: 24px;
+    width: 24px;
+  }
+
+  &__close-icon {
+    fill: #fff;
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+  }
+}

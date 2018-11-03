@@ -1,0 +1,56 @@
+.quantity {
+  align-items: stretch;
+  background-color: #f7f7f7;
+  border-radius: 6px;
+  display: flex;
+  height: 50px;
+  width: 90px;
+
+  @media (min-width: 1280px) {
+    width: 120px;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px 0 0;
+    transition: background-color 0.4s;
+    text-align: center;
+    width: 33.333%;
+
+    &:hover {
+      background-color: rgba(31, 31, 34, 0.04);
+    }
+
+    &:first-child {
+      border-radius: 6px 0 0 6px;
+    }
+
+    &:last-child {
+      border-radius: 0 6px 6px 0;
+    }
+  }
+
+  &__icon {
+    fill: rgba(0, 0, 0, 0.4);
+    height: 14px;
+    width: 14px;
+
+    @media (min-width: 1280px) {
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0;
+    text-align: center;
+    width: 33.333%;
+  }
+}

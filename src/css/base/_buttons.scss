@@ -1,0 +1,146 @@
+.button {
+  @include background-opacity(#1e1e1e, 0.04);
+  border: none;
+  border-radius: 6px;
+  color: #1e1e1e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  min-width: 216px;
+  padding: 13px 0;
+  transition: all 0.4s;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    @include background-opacity(#1e1e1e, 0.08);
+  }
+}
+
+.add-button {
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  min-width: 216px;
+  padding: 13px 19px 13px 24px;
+  transition: all 0.4s;
+  text-align: center;
+  text-decoration: none;
+
+  &--small {
+    justify-content: space-between;
+    padding-left: 26px;
+    padding-right: 17px;
+  }
+
+  &__icon {
+    height: 16px;
+    margin-left: 16px;
+    vertical-align: middle;
+    width: 16px;
+  }
+}
+
+.delete-button {
+  align-items: center;
+  @include background-opacity(#1e1e1e, 0.04);
+  border: none;
+  border-radius: 6px;
+  @include text-color(#1e1e1e, 0.6);
+  cursor: pointer;
+  display: flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  min-width: 216px;
+  padding: 13px 19px 13px 24px;
+  transition: all 0.4s;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    @include background-opacity(#1e1e1e, 0.08);
+  }
+
+  &--small {
+    justify-content: space-between;
+    padding-left: 26px;
+    padding-right: 17px;
+  }
+
+  &__icon {
+    fill: #1e1e1e;
+    height: 16px;
+    margin-left: 16px;
+    opacity: 0.4;
+    vertical-align: middle;
+    width: 16px;
+  }
+}
+
+.buy-button {
+  align-items: stretch;
+  border-radius: 6px;
+  box-shadow: 0 20px 30px 0 rgba(27, 28, 30, 0.1);
+  color: #fff;
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover .buy-button__text {
+    background-color: rgba(31, 31, 34, 0.1);
+  }
+
+  &:hover .buy-button__summ {
+    background-color: transparent;
+  }
+
+  &__text,
+  &__summ {
+    align-items: center;
+    display: flex;
+    padding-left: 7px;
+    padding-right: 7px;
+    transition: background-color 0.4s;
+  }
+
+  &__text {
+    border-radius: 6px 0 0 6px;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  &__summ {
+    background-color: rgba(31, 31, 34, 0.1);
+    border-radius: 0 6px 6px 0;
+    transition: background-color 0.4s;
+  }
+
+  &__rub {
+    fill: #fff;
+    height: 12px;
+    margin-top: 2px;
+    margin-left: 5px;
+    width: 9px;
+  }
+}

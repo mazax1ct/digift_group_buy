@@ -1,0 +1,29 @@
+.share-block {
+  background-color: #eee;
+  border-radius: 6px;
+  margin-bottom: 0;
+  margin-top: 0;
+  min-width: 216px;
+  padding: 9px 16px 9px;
+
+  &__title {
+    color: #7d7d7d;
+    display: block;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    line-height: 1;
+    margin-bottom: 7px;
+  }
+
+  &__ammount {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.5px;
+  }
+
+  &__currency {
+    color: #868686;
+  }
+}

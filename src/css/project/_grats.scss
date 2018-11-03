@@ -1,0 +1,124 @@
+.grats {
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+
+  &__textarea-block {
+    display: block;
+    position: relative;
+    width: 600px;
+  }
+
+  &__textarea,
+  &__fake-textarea,
+  &__textarea-placeholder {
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 33px;
+    padding-right: 20px;
+    text-align: center;
+    width: 620px;
+  }
+
+  &__textarea-placeholder {
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    padding-bottom: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+  }
+
+  &__fake-textarea {
+    border-bottom: 1px solid;
+    @include border-bottom-color(#1e1e1e, 0.12);
+    height: 49px;
+    left: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    position: absolute;
+    text-overflow: ellipsis;
+    transition: all 0.4s;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: text;
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  &__textarea {
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+    @include border-bottom-color(#1e1e1e, 0.12);
+    display: block;
+    height: 49px;
+    opacity: 0;
+    overflow-y: scroll;
+    padding-bottom: 16px;
+    position: relative;
+    resize: none;
+    transition: all 0.4s;
+    user-select: text;
+    z-index: 2;
+
+    &:focus {
+      border-bottom-width: 2px;
+      height: 117px;
+      opacity: 1;
+
+      & ~ .grats__textarea-placeholder {
+        display: none;
+      }
+
+      & ~ .grats__fake-textarea {
+        opacity: 0;
+      }
+    }
+
+    &.edited {
+      & ~ .grats__textarea-placeholder {
+        display: none;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 12px;
+    position: relative;
+    text-align: right;
+    z-index: 1;
+  }
+
+  &__note {
+    color: #7d7d7d;
+    font-size: 14px;
+    left: 50%;
+    letter-spacing: 0.3px;
+    line-height: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  &__count {
+    color: #7d7d7d;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.3px;
+    text-align: right;
+  }
+
+  &__count-limit {
+    color: #1e1e1e;
+  }
+}
