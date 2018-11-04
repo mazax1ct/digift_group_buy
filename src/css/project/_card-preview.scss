@@ -1,14 +1,13 @@
 .card-preview {
   box-shadow: 0 19px 25px 0 rgba(0, 0, 0, 0.1);
   border-radius: 12px;
-  margin-top: 48px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -48px;
+  left: 50%;
   overflow: hidden;
-  position: relative;
-  transform: translateY(-48px);
+  position: absolute;
+  transform: translateX(-50%);
+  top: -48px;
   width: 232px;
+  z-index: 2;
 
   &__card {
     border-radius: 12px;

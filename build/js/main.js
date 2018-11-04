@@ -79,16 +79,44 @@ $(document).ready(function() {
     window.getSelection().removeAllRanges();
   });
 
-  //открытие поля ввода скадки
-  $("#discount_info").focus(function() {
-    $(".overlay2").fadeIn();
-    $(".discount").addClass("focus");
+  //добавление email удалить к черту!!!
+  $(".js-add").click(function() {
+    console.log($('.email-row').length);
+
+    var parent = $(this).parent(".email-row");
+    if($('.email-row').length < 2) {
+      $(parent).before('<div class="email-row centered-block"><label class="input-block" for="name_1"><input class="input" id="name_1" name="name_1" type="text" value=""><span class="input-block__label">Имя</span></label><label class="input-block" for="email_1"><input class="input" id="email_1" name="email_1" type="text" value=""><span class="input-block__label">Email</span></label><button class="delete-button delete-button--small" type="button">Удалить <svg class=" delete-button__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button></div>');
+    } else {
+      $(".background").removeClass("with-preview");
+      $(".choosen-options").addClass("choosen-options--small_indent");
+      $(".card-preview").animate({
+        opacity: 0,
+        marginTop: -48,
+      }, 300, function() {
+        if($('.email-row').length >= 4) {
+          $(".emails-list__inner").addClass("scrollbox1");
+        }
+        $(parent).before('<div class="email-row centered-block"><label class="input-block" for="name_1"><input class="input" id="name_1" name="name_1" type="text" value=""><span class="input-block__label">Имя</span></label><label class="input-block" for="email_1"><input class="input" id="email_1" name="email_1" type="text" value=""><span class="input-block__label">Email</span></label><button class="delete-button delete-button--small" type="button">Удалить <svg class="delete-button__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button></div>');
+        var scrollBlock = $(".emails-list__inner");
+        scrollBlock.scrollTop(scrollBlock.prop('scrollHeight'));
+      });
+    }
   });
 
-  //закрытие поля ввода скадки
-  $(".discount__accept").click(function() {
-    $(".overlay2").fadeOut();
-    $(".discount").removeClass("focus");
-    return false;
+  //удаление email удалить к черту!!!
+  $(document).on("click", ".delete-button", function() {
+    console.log($('.email-row').length);
+    if($('.email-row').length <= 5) {
+      $(".emails-list__inner").removeClass("scrollbox1");
+    }
+    if($('.email-row').length < 4) {
+      $(".background").addClass("with-preview");
+      $(".choosen-options").removeClass("choosen-options--small_indent");
+      $(".card-preview").animate({
+        opacity: 1,
+        marginTop: 0,
+      }, 300);
+    }
+    $(this).parent(".email-row").remove();
   });
 });

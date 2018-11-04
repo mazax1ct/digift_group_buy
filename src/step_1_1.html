@@ -20,29 +20,31 @@
         <div class="wrapper">
           //= template/header.html
           <div class="container">
-            <div class="design background">
-              <p class="title">Выберите дизайн</p>
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img width="372" height="236" src="images/content/cards-slider/card_1.jpg" alt="Карта 1">
-                  </div>
-                  <div class="swiper-slide">
-                    <img width="372" height="236" src="images/content/cards-slider/card_2.jpg" alt="Карта 2">
-                  </div>
-                  <div class="swiper-slide">
-                    <img width="372" height="236" src="images/content/cards-slider/card_3.jpg" alt="Карта 3">
-                  </div>
-                  <div class="swiper-slide">
-                    <img width="372" height="236" src="images/content/cards-slider/card_4.jpg" alt="Карта 4">
-                  </div>
-                  <div class="swiper-slide">
-                    <img width="372" height="236" src="images/content/cards-slider/card_5.jpg" alt="Карта 5">
+            <div class="background">
+              <div class="design">
+                <p class="title">Выберите дизайн</p>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img width="372" height="236" src="images/content/cards-slider/card_1.jpg" alt="Карта 1">
+                    </div>
+                    <div class="swiper-slide">
+                      <img width="372" height="236" src="images/content/cards-slider/card_2.jpg" alt="Карта 2">
+                    </div>
+                    <div class="swiper-slide">
+                      <img width="372" height="236" src="images/content/cards-slider/card_3.jpg" alt="Карта 3">
+                    </div>
+                    <div class="swiper-slide">
+                      <img width="372" height="236" src="images/content/cards-slider/card_4.jpg" alt="Карта 4">
+                    </div>
+                    <div class="swiper-slide">
+                      <img width="372" height="236" src="images/content/cards-slider/card_5.jpg" alt="Карта 5">
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="centered-block">
-                <button class="add-button" type="button">Выбери или перенеси свое фото <svg class="add-button__icon" aria-hidden="true"><use xlink:href="#plus"/></svg></button>
+                <div class="centered-block">
+                  <button class="add-button" type="button">Выбери или перенеси свое фото <svg class="add-button__icon" aria-hidden="true"><use xlink:href="#plus"/></svg></button>
+                </div>
               </div>
               <div class="navigation">
                 <a class="navigation__link navigation__link--prev disabled" href="javascript:void(0)"><svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-left"/></svg>Назад</a>
@@ -65,6 +67,7 @@
     <script src="js/swiper.min.js"></script>
     <script>
       var swiper = new Swiper('.swiper-container', {
+        loop: true,
         slidesPerView: 'auto',
         spaceBetween: 24,
         centeredSlides: true,
