@@ -90,7 +90,7 @@ $(document).ready(function() {
       $(".card-preview").animate({
         opacity: 0,
         marginTop: -48,
-      }, 300, function() {
+      }, 200, function() {
         if($('.email-row').length >= 4) {
           $(".emails-list__inner").addClass("scrollbox1");
         }
@@ -112,7 +112,7 @@ $(document).ready(function() {
       $(".card-preview").animate({
         opacity: 1,
         marginTop: 0,
-      }, 300);
+      }, 200);
     }
     $(this).parent(".email-row").remove();
   });
