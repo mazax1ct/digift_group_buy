@@ -3,12 +3,15 @@
 .reject__button--no,
 .par.is-active,
 .radio-button.is-active,
-.calendar__switch.is-active {
+.calendar__switch.is-active,
+.cart-link__quantity,
+.buy-button {
   background-color: $primary;
 }
 
 .navigation__link--next:hover,
-.reject__button--no:hover {
+.reject__button--no:hover,
+.buy-button:hover {
   background-color: lighten($primary, 5%);
 }
 
@@ -23,7 +26,8 @@
 .calendar__day.current,
 .calendar__day.is-active,
 .calendar__time:hover,
-.calendar__time.is-active {
+.calendar__time.is-active,
+.input-block__discount {
   @include background-opacity($primary, 0.16);
   color: $secondary;
 }

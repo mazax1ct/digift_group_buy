@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Корзина</title>
+
+    <meta name="description" content="">
+
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/style.html
+  </head>
+  <body>
+    //= template/sprite.html
+    <div class="iframe-wrapper">
+      <div class="iframe-container">
+        <button class="js-iframe-close iframe-close"><svg class="iframe-close__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+        <div class="wrapper">
+          //= template/header.html
+          <div class="container">
+            //= template/cart-link.html
+            <div class="cart">
+              <div class="cart__scroll">
+                <!--если обычных элементов в корзине меньше 3, класс scrollbox1 не вешаем-->
+                <p class="cart__title">Корзина</p>
+                <div class="cart-item">
+                  <div class="cart-item__image"><img src="images/content/cards-slider/card_2.jpg" alt=""></div>
+                  <div class="cart-item__description">
+                    <div class="cart-item__block">
+                      <p class="cart-item__title">Для кого</p>
+                      <p>Александр, +7 (916) 313-64-30, hello@sorokins.me</p>
+                    </div>
+                    <div class="cart-item__block cart-item__block--row">
+                      <div class="cart-item__block-cell">
+                        <p class="cart-item__title">От кого</p>
+                        <p>Стефания</p>
+                      </div>
+                      <div class="cart-item__block-cell">
+                        <p class="cart-item__title">Номинал</p>
+                        <p>1500 <span class="cart-item__currency">Р</span></p>
+                      </div>
+                      <div class="cart-item__block-cell">
+                        <p class="cart-item__title">Поздравление</p>
+                        <p>111 символов</p>
+                      </div>
+                      <div class="cart-item__block-cell">
+                        <p class="cart-item__title">Карта будет отправлена</p>
+                        <p>12.03.2018 в 13:00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item">
+                  <div class="cart-item__image"><img src="images/content/cards-slider/card_1.jpg" alt=""></div>
+                  <div class="cart-item__description">
+                    <div class="cart-item__block">
+                      <p class="cart-item__title">Для кого</p>
+                      <p>Александр, +7 (916) 313-64-30, hello@sorokins.me</p>
+                    </div>
+                    <div class="cart-item__block cart-item__block--row">
+                      <div class="cart-item__block-cell">
+                        <p class="cart-item__title">От кого</p>
+                        <p>Стефания</p>
+                      </div>
+                      <div class="cart-item__block-cell">
+                        <p class="cart-item__title">Номинал</p>
+                        <p>1500 <span class="cart-item__currency">Р</span></p>
+                      </div>
+                      <div class="cart-item__block-cell">
+                        <p class="cart-item__title">Поздравление</p>
+                        <p>111 символов</p>
+                      </div>
+                      <div class="cart-item__block-cell">
+                        <p class="cart-item__title">Карта будет отправлена</p>
+                        <p>12.03.2018 в 13:00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__bottom">
+                <div class="cart__discount-block">
+                  <label class="input-block" for="discount">
+                    <input class="input" id="discount" name="discount" type="text" value="">
+                    <span class="input-block__label">Промокод/Карта лояльности</span>
+                  </label>
+                </div>
+                <p class="cart__terms">
+                  Нажимая "Оплатить", я соглашаюсь с <a href="#">Правилами использования подарочных карт и сертификатов</a> и <a href="#">Офертой</a>.
+                </p>
+                <a class="buy-button" href="#"><span class="buy-button__text">Оплатить</span> <span class="buy-button__summ">1500 руб</span></a>
+              </div>
+            </div>
+          </div>
+          //= template/footer.html
+        </div>
+        //= template/reject.html
+      </div>
+    </div>
+
+    //= template/scripts.html
+  </body>
+</html>
