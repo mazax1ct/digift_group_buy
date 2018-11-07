@@ -86,16 +86,6 @@
     flex-basis: 256px;
     min-width: 256px;
     width: 256px;
-
-    /*.input-block__label {
-      line-height: 48px;
-    }
-
-    .input {
-      height: 48px;
-      padding-top: 13px;
-      padding-bottom: 13px;
-    }*/
   }
 
   &__terms {
@@ -106,8 +96,10 @@
     margin-right: 24px;
 
     a {
+      transition: opacity 0.3s;
+
       &:hover {
-        text-decoration: underline;
+        opacity: 0.7;
       }
     }
   }
