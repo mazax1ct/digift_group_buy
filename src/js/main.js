@@ -54,6 +54,11 @@ $(document).ready(function() {
     $(".calendar").fadeIn();
   });
 
+  $(".calendar-overlay").click(function() {
+    $(".calendar-overlay").fadeOut();
+    $(".calendar").fadeOut();
+  });
+
   //переключение вкладки календаря
   $(".calendar__switch").click(function() {
     var block = $(this).attr("data-href");
