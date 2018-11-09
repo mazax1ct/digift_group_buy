@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Ввод email участников</title>
+    <title>Редактирование данных отправителя</title>
 
     <meta name="description" content="">
 
@@ -88,45 +88,25 @@
                 <img class="card-preview__card" src="images/content/cards-slider/card_1.jpg" alt="Ваша будущая карта">
                 <span class="card-preview__par"><span class="js-card-preview__par-num">2000</span> руб</span>
               </div>
-              <div class="emails-list">
-                <div class="emails-list__inner">
-                  <div class="choosen-options">
-                    <span class="choosen-option">По email</span>
-                  </div>
-                  <div class="email-block">
-                    <p class="title">Введите email участников</p>
-                    <div class="email-row centered-block">
-                      <label class="input-block" for="name_1">
-                        <input class="input" id="name_1" name="name_1" type="text" value="">
-                        <span class="input-block__label">Имя</span>
-                      </label>
-                      <label class="input-block" for="email_1">
-                        <input class="input" id="email_1" name="email_1" type="text" value="">
-                        <span class="input-block__label">Email</span>
-                      </label>
-                      <button class="delete-button delete-button--small" type="button">Удалить <svg class="delete-button__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
-                    </div>
-                    <div class="email-row centered-block">
-                      <label class="input-block" for="name_2">
-                        <input class="input" id="name_2" name="name_2" type="text" value="">
-                        <span class="input-block__label">Имя</span>
-                      </label>
-                      <label class="input-block" for="email_2">
-                        <input class="input" id="email_2" name="email_2" type="text" value="">
-                        <span class="input-block__label">Email</span>
-                      </label>
-                      <button class="js-add add-button add-button--small" type="button">Добавить еще <svg class="add-button__icon" aria-hidden="true"><use xlink:href="#plus"/></svg></button>
-                    </div>
-                  </div>
+              <div class="choosen-options">
+                <span class="choosen-option">Себе</span>
+              </div>
+              <div class="from-block">
+                <p class="title">От кого подарок</p>
+                <div class="centered-block">
+                  <label class="input-block edited" for="name">
+                    <input class="input" id="name" name="name" type="text" value="Александр">
+                    <span class="input-block__label">Имя</span>
+                  </label>
+                  <label class="input-block" for="email">
+                    <input class="input" id="email" name="email" type="text" value="">
+                    <span class="input-block__label">Email</span>
+                  </label>
                 </div>
               </div>
-              <div class="navigation">
-                <a class="navigation__link navigation__link--prev" href="step_6.html"><svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-left"/></svg>Назад</a>
-                <div class="progress-block">
-                  <div class="progress-bar"><div class="progress" style="width: 100%"></div></div>
-                  <div class="steps"><span class="step">7</span> / 7</div>
-                </div>
-                <a class="navigation__link navigation__link--next disabled" href="javascript:void(0)">Далее<svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-right"/></svg></a>
+              <div class="edit-buttons">
+                <button class="button" type="button">Отменить</button>
+                <button class="button button--accept" type="button">Сохранить</button>
               </div>
             </div>
           </div>

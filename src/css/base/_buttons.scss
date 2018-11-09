@@ -19,6 +19,10 @@
   &:hover {
     @include background-opacity(#1e1e1e, 0.08);
   }
+
+  &--accept {
+    color: #fff;
+  }
 }
 
 .add-button {

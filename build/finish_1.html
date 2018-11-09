@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Ввод email участников</title>
+    <title>Завершение оформления</title>
 
     <meta name="description" content="">
 
@@ -83,50 +83,99 @@
             </div>
           </header>
           <div class="container">
-            <div class="with-preview background">
-              <div class="card-preview">
-                <img class="card-preview__card" src="images/content/cards-slider/card_1.jpg" alt="Ваша будущая карта">
-                <span class="card-preview__par"><span class="js-card-preview__par-num">2000</span> руб</span>
-              </div>
-              <div class="emails-list">
-                <div class="emails-list__inner">
-                  <div class="choosen-options">
-                    <span class="choosen-option">По email</span>
+            <div class="finish">
+              <div class="finish__left">
+                <a class="finish__back" href="#" title="Назад"><svg class="finish__back-icon" aria-hidden="true"><use xlink:href="#arrow-left"/></svg></a>
+                <div class="card-preview card-preview--finish">
+                  <img class="card-preview__card" src="images/content/cards-slider/card_1.jpg" alt="Ваша будущая карта" title="Редактировать дизайн">
+                  <span class="card-preview__par" title="Редактировать номинал"><span class="js-card-preview__par-num">2000</span> руб</span>
+                  <svg class="card-preview__edit-icon" aria-hidden="true"><use xlink:href="#edit"/></svg>
+                </div>
+                <!--тут текст нужно обрезать по количеству символов и подставлять в конец многоточие-->
+                <p class="finish__grats-text" title="Редактировать текст поздравления">
+                  Поздравляю с днем рождения и желаю видеть только прекрасное, слышать то…
+                  <svg class="finish__grats-icon" aria-hidden="true"><use xlink:href="#edit"/></svg>
+                </p>
+                <div class="finish__reciever">
+                  <p class="finish__title" title="Редактировать данные получателя карты">
+                    Получатель
+                    <svg class="finish__title-edit" aria-hidden="true"><use xlink:href="#edit"/></svg>
+                  </p>
+                  <div class="finish__reciever-data">
+                    <div class="finish__option" title="Константин Константинович Константинопольский">Константин Константинович Константинопольский</div>
+                    <div class="finish__option" title="+7 (999) 999-99-99">+7 (999) 999-99-99</div>
+                    <div class="finish__option" title="reallyreallylongemailaddress@sorokins.me">reallyreallylongemailaddress@sorokins.me</div>
                   </div>
-                  <div class="email-block">
-                    <p class="title">Введите email участников</p>
-                    <div class="email-row centered-block">
-                      <label class="input-block" for="name_1">
-                        <input class="input" id="name_1" name="name_1" type="text" value="">
-                        <span class="input-block__label">Имя</span>
-                      </label>
-                      <label class="input-block" for="email_1">
-                        <input class="input" id="email_1" name="email_1" type="text" value="">
-                        <span class="input-block__label">Email</span>
-                      </label>
-                      <button class="delete-button delete-button--small" type="button">Удалить <svg class="delete-button__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
-                    </div>
-                    <div class="email-row centered-block">
-                      <label class="input-block" for="name_2">
-                        <input class="input" id="name_2" name="name_2" type="text" value="">
-                        <span class="input-block__label">Имя</span>
-                      </label>
-                      <label class="input-block" for="email_2">
-                        <input class="input" id="email_2" name="email_2" type="text" value="">
-                        <span class="input-block__label">Email</span>
-                      </label>
-                      <button class="js-add add-button add-button--small" type="button">Добавить еще <svg class="add-button__icon" aria-hidden="true"><use xlink:href="#plus"/></svg></button>
+                </div>
+                <div class="finish__group">
+                  <p class="finish__title" title="Редактировать данные участников групповой покупки">
+                    Групповая покупка
+                    <svg class="finish__title-edit" aria-hidden="true"><use xlink:href="#edit"/></svg>
+                  </p>
+                  <div class="finish__group-data">
+                    <!--тут придется считать количество символов в именах участников групповой покупки и выводить то, что сможет поместиться, но есть проблема с разной шириной символов -->
+                    <div class="finish__group-option" title="Николь">Николь</div>
+                    <div class="finish__group-option" title="Николь">Николь</div>
+                    <div class="finish__group-option" title="Стефания">Стефания</div>
+                    <div class="group-holder" title="Ещё 99 участников">
+                      <span class="js-group-holder-opener group-holder__text">+99</span>
+                      <div class="group-holder__dropdown">
+                        <div class="group-holder__dropdown-inner">
+                          <div class="group-holder__dropdown-scroll scrollbox3">
+                            <p class="group-holder__dropdown-item" title="Александр">Александр</p>
+                            <p class="group-holder__dropdown-item" title="Арсений">Арсений</p>
+                            <p class="group-holder__dropdown-item" title="Константин">Константин</p>
+                            <p class="group-holder__dropdown-item" title="Екатерина">Екатерина</p>
+                            <p class="group-holder__dropdown-item" title="Константин Константинович Константинопольский">Константин Константинович Константинопольский</p>
+                            <p class="group-holder__dropdown-item" title="Константин Константинович Константинопольский">Константин Константинович Константинопольский</p>
+                            <p class="group-holder__dropdown-item" title="Константин Константинович Константинопольский">Константин Константинович Константинопольский</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="navigation">
-                <a class="navigation__link navigation__link--prev" href="step_6.html"><svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-left"/></svg>Назад</a>
-                <div class="progress-block">
-                  <div class="progress-bar"><div class="progress" style="width: 100%"></div></div>
-                  <div class="steps"><span class="step">7</span> / 7</div>
+              <div class="finish__right">
+                <div class="finish__right-top">
+                  <div class="finish__status-block">
+                    <p class="finish__status-title">Карта будет отправлена</p>
+                    <p class="finish__status finish__status--editable" title="Редактировать дату и время отправки карты">
+                      12.03.2018 в 13:00
+                      <svg class="finish__status-edit" aria-hidden="true"><use xlink:href="#edit"/></svg>
+                    </p>
+                  </div>
+                  <div class="finish__status-block">
+                    <p class="finish__status-title">Срок действия</p>
+                    <p class="finish__status">1 год</p>
+                  </div>
                 </div>
-                <a class="navigation__link navigation__link--next disabled" href="javascript:void(0)">Далее<svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-right"/></svg></a>
+                <div class="finish__right-bottom">
+                  <div class="finish__discount">
+                    <label class="input-block edited" for="discount">
+                      <input class="input" id="discount" name="discount" type="text" value="3742729924">
+                      <span class="input-block__label">Промокод/Карта лояльности</span>
+                      <span class="input-block__discount">-10%</span>
+                    </label>
+                  </div>
+                  <div class="finish__quantity-block">
+                    <div class="quantity">
+                      <button class="quantity__button" type="button"><svg aria-hidden="true" class="quantity__icon"><use xlink:href="#minus"></use></svg></button>
+                      <input class="quantity__input" type="text" value="1">
+                      <button class="quantity__button" type="button"><svg aria-hidden="true" class="quantity__icon"><use xlink:href="#plus"></use></svg></button>
+                    </div>
+                    <a class="buy-button" href="#"><span class="buy-button__text">Оплатить</span> <span class="buy-button__summ">1500 руб</span></a>
+                  </div>
+                  <button class="finish__add" type="button">Ещё карту <svg aria-hidden="true" class="finish__add-icon"><use xlink:href="#plus"></use></svg></button>
+                  <a class="cart-link cart-link--finish" href="cart.html">
+                    <svg class="cart-link__icon" aria-hidden="true"><use xlink:href="#cart"/></svg>
+                    Корзина
+                    <span class="cart-link__quantity">3</span>
+                  </a>
+                  <p class="finish__terms">
+                    Нажимая "Оплатить", я соглашаюсь с <a href="#">Правилами использования подарочных карт и сертификатов</a> и <a href="#">Офертой</a>.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

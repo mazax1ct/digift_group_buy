@@ -5,13 +5,15 @@
 .radio-button.is-active,
 .calendar__switch.is-active,
 .cart-link__quantity,
-.buy-button {
+.buy-button,
+.button--accept {
   background-color: $primary;
 }
 
 .navigation__link--next:hover,
 .reject__button--no:hover,
-.buy-button:hover {
+.buy-button:hover,
+.button--accept:hover {
   background-color: lighten($primary, 5%);
 }
 

@@ -16,6 +16,22 @@
   top: 6px;
   z-index: 2;
 
+  &--finish {
+    @include background-opacity(#1e1e1e, 0.04);
+    box-shadow: none;
+    justify-content: center;
+    position: relative;
+    right: auto;
+    top: auto;
+    transition: background-color 0.4s;
+    width: 100%;
+    z-index: 0;
+
+    &:hover {
+      @include background-opacity(#1e1e1e, 0.08);
+    }
+  }
+
   &__icon {
     fill: #1e1e1e;
     height: 24px;

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Редактирование данных отправителя</title>
+
+    <meta name="description" content="">
+
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/style.html
+  </head>
+  <body>
+    //= template/sprite.html
+    <div class="iframe-wrapper">
+      <div class="iframe-container">
+        <button class="js-iframe-close iframe-close"><svg class="iframe-close__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+        <div class="wrapper">
+          //= template/header.html
+          <div class="container">
+            <div class="with-preview background">
+              //= template/card-preview.html
+              <div class="choosen-options">
+                <span class="choosen-option">Себе</span>
+              </div>
+              <div class="from-block">
+                <p class="title">От кого подарок</p>
+                <div class="centered-block">
+                  <label class="input-block edited" for="name">
+                    <input class="input" id="name" name="name" type="text" value="Александр">
+                    <span class="input-block__label">Имя</span>
+                  </label>
+                  <label class="input-block" for="email">
+                    <input class="input" id="email" name="email" type="text" value="">
+                    <span class="input-block__label">Email</span>
+                  </label>
+                </div>
+              </div>
+              <div class="edit-buttons">
+                <button class="button" type="button">Отменить</button>
+                <button class="button button--accept" type="button">Сохранить</button>
+              </div>
+            </div>
+          </div>
+          //= template/footer.html
+        </div>
+        //= template/reject.html
+      </div>
+    </div>
+
+    //= template/scripts.html
+  </body>
+</html>

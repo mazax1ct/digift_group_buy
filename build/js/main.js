@@ -121,4 +121,9 @@ $(document).ready(function() {
     }
     $(this).parent(".email-row").remove();
   });
+
+  //открытие/закрытие выпадашки со списком участнкиов групповой покупки
+  $(".js-group-holder-opener").click(function() {
+    $(".group-holder__dropdown").toggleClass("is-open");
+  });
 });

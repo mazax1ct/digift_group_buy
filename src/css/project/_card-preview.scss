@@ -2,15 +2,33 @@
   box-shadow: 0 19px 25px 0 rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   left: 50%;
-  overflow: hidden;
   position: absolute;
   transform: translateX(-50%);
   top: -48px;
   width: 232px;
   z-index: 2;
 
+  &--finish {
+    cursor: pointer;
+    left: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    position: relative;
+    top: auto;
+    transform: none;
+    z-index: 0;
+  }
+
   &__card {
     border-radius: 12px;
+
+    &:hover {
+      & ~ .card-preview__edit-icon {
+        opacity: 0.5;
+        top: 0;
+      }
+    }
   }
 
   &__par {
@@ -29,5 +47,24 @@
     padding-top: 4px;
     right: 6px;
     text-align: center;
+
+    &:hover {
+      & ~ .card-preview__edit-icon {
+        opacity: 0.5;
+        top: 112px;
+      }
+    }
+  }
+
+  &__edit-icon {
+    fill: #0a0b09;
+    height: 24px;
+    left: auto;
+    opacity: 0;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    transition: opacity 0.3s, top 0.3s;
+    width: 24px;
   }
 }

@@ -12,8 +12,6 @@
 
 @import "base/_inputs_and_textareas.scss";
 
-@import "base/_checkboxes_and_radio.scss";
-
 @import "base/_radio-button.scss";
 
 @import "base/_buttons.scss";
@@ -40,6 +38,8 @@
 
 @import "project/_navigation.scss";
 
+@import "project/_edit-buttons.scss";
+
 @import "project/_crop.scss";
 
 @import "project/_card-preview.scss";
@@ -60,15 +60,11 @@
 
 @import "project/_emails-list.scss";
 
-//@import "project/_send-form.scss";
+@import "project/_finish.scss";
 
-//@import "project/_discount.scss";
-
-//@import "project/_quantity.scss";
+@import "project/_quantity.scss";
 
 @import "project/_cart.scss";
-
-//@import "project/_popup.scss";
 
 @import "plugins/cropper.scss";
 

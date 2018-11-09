@@ -1,0 +1,22 @@
+.edit-buttons {
+  align-items: center;
+  bottom: 12px;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  padding-left: 12px;
+  padding-right: 12px;
+  top: auto;
+  width: 100%;
+  z-index: 0;
+
+  .button {
+    font-weight: 500;
+    margin-left: 6px;
+    margin-right: 6px;
+    min-width: 174px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
