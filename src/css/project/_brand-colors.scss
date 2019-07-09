@@ -6,14 +6,16 @@
 .calendar__switch.is-active,
 .cart-link__quantity,
 .buy-button,
-.button--accept {
+.button--accept,
+.balance__button {
   background-color: $primary;
 }
 
 .navigation__link--next:hover,
 .reject__button--no:hover,
 .buy-button:hover,
-.button--accept:hover {
+.button--accept:hover,
+.balance__button:hover {
   background-color: lighten($primary, 5%);
 }
 

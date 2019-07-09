@@ -1,0 +1,105 @@
+.balance {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  &__form-block {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
+    height: 236px;
+    position: relative;
+    width: 372px;
+
+    &--bg {
+      background: url('../images/backgrounds/balance_bg.svg') no-repeat 50% 97px #fff;
+    }
+  }
+
+  &__form {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 29px;
+    width: 227px;
+
+    .input-block {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__button-block {
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    text-align: center;
+  }
+
+  &__button {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  &__result-title {
+    border-bottom: 1px solid #efefef;
+    color: #1e1e1e;
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    letter-spacing: 0.47px;
+    line-height: 1;
+    padding: 29px 30px 28px;
+  }
+
+  &__card-number {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.56px;
+    line-height: 1;
+  }
+
+  &__result-info {
+    padding: 45px 30px 30px;
+  }
+
+  &__value-title {
+    color: #1e1e1e;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 0.47px;
+    margin-bottom: 14px;
+  }
+
+  &__result-value {
+    color: #1e1e1e;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 14px;
+  }
+
+  &__card-validity {
+    color: #1e1e1e;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.38px;
+    opacity: 0.8;
+  }
+
+  &__no-result-block {
+    color: rgba(#1e1e1e, 0.8);
+    font-size: 19px;
+    line-height: 27px;
+    padding-top: 62px;
+    text-align: center;
+  }
+
+  &__no-result-icon {
+    display: block;
+    fill: #1e1e1e;
+    height: 20px;
+    margin: 0 auto 14px;
+    width: 20px;
+  }
+}
