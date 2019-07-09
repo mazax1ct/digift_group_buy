@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Проверка баланса</title>
+
+  <meta name="description" content="">
+
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+  <div class="iframe-wrapper">
+    <div class="iframe-container">
+      <button class="js-iframe-close iframe-close"><svg class="iframe-close__icon" aria-hidden="true">
+          <use xlink:href="#close" /></svg></button>
+      <div class="wrapper">
+        //= template/header.html
+        <div class="container">
+          <div class="background">
+            <div class="balance">
+              <p class="title">Проверка баланса</p>
+              <div class="balance__form-block">
+                <div class="balance__result-block">
+                  <div class="balance__result-title">
+                    Баланс карты №
+                    <span class="balance__card-number">475729405</span>
+                  </div>
+                  <div class="balance__result-info">
+                    <div class="balance__value-title">Сумма</div>
+                    <div class="balance__result-value">2 500 руб.</div>
+                    <div class="balance__card-validity">Срок действия до 29.09.19</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        //= template/footer.html
+      </div>
+      //= template/reject.html
+    </div>
+  </div>
+
+  //= template/scripts.html
+</body>
+
+</html>
