@@ -33,7 +33,7 @@
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
-    padding-left: 37px;
+    padding-left: 24px;
   }
 
   &__link {
@@ -43,6 +43,14 @@
     padding-top: 10px;
     padding-bottom: 10px;
     text-decoration: none;
+
+    &--button {
+      background-color: #f6f6f6;
+      border-radius: 19px;
+      font-weight: 500;
+      height: 38px;
+      padding: 5px 18px;
+    }
   }
 
   &__socials {
