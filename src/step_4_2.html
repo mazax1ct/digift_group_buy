@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Данные отправителя</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <meta name="description" content="">
+  <title>Данные отправителя</title>
 
-    <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="">
 
-    //= template/style.html
-  </head>
-  <body>
-    //= template/sprite.html
-    <div class="iframe-wrapper">
-      <div class="iframe-container">
-        <button class="js-iframe-close iframe-close"><svg class="iframe-close__icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
-        <div class="wrapper">
-          //= template/header.html
-          <div class="container">
-            <div class="with-preview background">
-              //= template/card-preview.html
-              <div class="choosen-options">
-                <span class="choosen-option">Себе</span>
-              </div>
-              <div class="from-block">
-                <p class="title">От кого подарок</p>
-                <div class="centered-block">
-                  <label class="input-block edited" for="name">
-                    <input class="input" id="name" name="name" type="text" value="Александр">
-                    <span class="input-block__label">Имя</span>
-                  </label>
-                  <label class="input-block error" for="email">
-                    <input class="input" id="email" name="email" type="text" value="почта">
-                    <span class="input-block__label">Email</span>
-                  </label>
-                </div>
-              </div>
-              <div class="navigation">
-                <a class="navigation__link navigation__link--prev" href="step_4_1.html"><svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-left"/></svg>Назад</a>
-                <div class="progress-block">
-                  <div class="progress-bar"><div class="progress" style="width: 57.1388%"></div></div>
-                  <div class="steps"><span class="step">4</span> / 7</div>
-                </div>
-                <a class="navigation__link navigation__link--next disabled" href="javascript:void(0)">Далее<svg class="navigation__link-icon" aria-hidden="true"><use xlink:href="#arrow-right"/></svg></a>
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+  <div class="iframe-wrapper">
+    <div class="iframe-container">
+      <button class="js-iframe-close iframe-close"><svg class="iframe-close__icon" aria-hidden="true">
+          <use xlink:href="#close" /></svg></button>
+      <div class="wrapper">
+        //= template/header.html
+        <div class="container">
+          <div class="with-preview background">
+            //= template/card-preview.html
+            <div class="choosen-options">
+              <span class="choosen-option">Себе</span>
+            </div>
+            <div class="from-block">
+              <p class="title">От кого подарок</p>
+              <div class="centered-block">
+                <label class="input-block edited" for="name">
+                  <input class="input valid" id="name" name="name" type="text" value="Александр">
+                  <span class="input-block__label">Имя</span>
+                </label>
+                <label class="input-block error" for="email">
+                  <input class="input" id="email" name="email" type="text" value="почта">
+                  <span class="input-block__label">Email</span>
+                </label>
               </div>
             </div>
+            <div class="navigation">
+              <a class="navigation__link navigation__link--prev" href="step_4_1.html"><svg class="navigation__link-icon" aria-hidden="true">
+                  <use xlink:href="#arrow-left" /></svg>Назад</a>
+              <div class="progress-block">
+                <div class="progress-bar">
+                  <div class="progress" style="width: 57.1388%"></div>
+                </div>
+                <div class="steps"><span class="step">4</span> / 7</div>
+              </div>
+              <a class="navigation__link navigation__link--next disabled" href="javascript:void(0)">Далее<svg class="navigation__link-icon" aria-hidden="true">
+                  <use xlink:href="#arrow-right" /></svg></a>
+            </div>
           </div>
-          //= template/footer.html
         </div>
-        //= template/reject.html
+        //= template/footer.html
       </div>
+      //= template/reject.html
     </div>
+  </div>
 
-    //= template/scripts.html
-  </body>
+  //= template/scripts.html
+</body>
+
 </html>
